@@ -81,4 +81,173 @@ em {
 }
 #about h3{
   margin:  20px auto;
+
+}
+
+/* ------------------themes ------------*/
+#themes{
+  background-color: #efefef;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#themes .row{
+  /*display: flex;
+  justify-content: flex-end;
+  display: grid;*/
+
+  margin: auto;
+  padding-right: 0px;
+
+}
+#themes .col-md-4{
+  padding : 20px;
+  margin: auto;
+  margin-left: 10%;
+
+}
+#themes .col-md-4 h4{
+  padding : 5px;
+  font-size: 1.2em;
+}
+#themes .col-md-4 img{
+  width : 70%;
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.2);
+}
+#themes .col-md-4 p{
+  padding : 5px;
+  text-align: justify;
+}
+/*-------------------features----------*/
+#features{
+  padding-top: 100px ;
+  padding-bottom: 100px;
+  background: linear-gradient(90deg, black, gray, rgb(204, 204, 255), black,black) ;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  color : #fff;
+
+}
+
+#features .col-md-6{
+  padding: 20px;
+}
+#features .col-md-6 img{
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.feature-box{
+  height: 120px;
+}
+.feature-box .feature-left{
+  height: 120px;
+  width : 20%;
+  float: left;
+}
+.feature-box .feature-left .fa{
+  padding-top: 13px;
+  font-size: 50px;
+}
+.feature-box .feature-right{
+  height: 120px;
+  width : 80%;
+  float: left;
+}
+.feature-box .feature-right h4{
+  padding-top: 10px;
+  padding-left: 15px;
+  text-align: left;
+}
+.feature-box .feature-right p{
+
+  padding-left: 15px;
+  text-align: left;
+}
+/* ---------------------speakers-----------*/
+#speakers{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#speakers .col-md-4{
+  padding: 10px 30px ;
+}
+#speakers img {
+  width : 140px;
+  height : 140px;
+  border-radius: 50%;
+  margin-left: -55px;
+  margin-top: -40px;
+  border: 5px solid #fff;
+  margin-bottom: 30px;
+}
+.review{
+  font-size: 16px;
+  padding: 10px 10px 10px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.2);
+}
+.review .fa-twitter{
+  color : #013f7e;
+}
+#speakers .cas{
+  color : #013f7e;
+  font-weight: 600;
+  font-size: 18px;
+}
+#speakers h1{
+  margin-bottom: 20px;
+    color : #013f7e;
+}
+#speakers p{
+  margin-bottom: 30px;
+}
+#speakers .middle{
+  margin-bottom: -30px;
+  margin-top: -30px
+}
+#speakers .row{
+  margin: auto;
+  margin-left: 8%;
+  margin-top: 4%;
+}
+/*-----------footer **********/
+#footer {
+  margin-top: 80px;
+  padding: 100px;
+  background-color: #efefef;
+  color : #013f7e;
+}
+#footer .footer-logo{
+  width : 150px;
+  margin-top : 25px;
+  margin-bottom: 15px;
+}
+#footer h1{
+  font-size: 15px;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+#footer p{
+  font-size: 12px;
+  text-align: left;
+}
+#footer .city{
+  margin-left: 37px;
+}
+#footer .row .fa{
+  padding-right:  20px;
+  font-size: 16px;
+}
+#footer hr{
+  margin-top: 10px;
+}
+#footer .fa-heat-to {
+  color : red ;
+  font-size: 17px;
+}
+#footer .copyright {
+  margin-bottom: -80px;
+  text-align: center;
+  font-size: 15px;
 }

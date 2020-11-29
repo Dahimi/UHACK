@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -15,40 +14,33 @@
   <body>
       <!--- -- header ------------>
       <header>
-        <nav class="navbar navbar-light">
-          <a class="navbar-brand" href="#"><strong>UHACK</strong></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class = "fa fa-bars"> </i>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">ABOUT US</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#themes">THEMES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#speakers">SPONSERS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#features">FEATURES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#footer">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#footer">CONTACT US</a>
-              </li>
-
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div id="navbar-animmenu">
+        <ul class="show-dropdown main-navbar">
+            <a class="navbar-brand" href="#"><strong>UHACK</strong></a>
+            <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+            <li>
+                <a href="#footer" class="navtop">CONTACT US</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);"class="navtop">CALENDAR</a>
+            </li>
+            <li>
+                <a href="#speakers" class="navtop">SPEAKER</a>
+            </li>
+            <li>
+                <a href="#features" class="navtop">FEATURES</a>
+            </li>
+            <li >
+                <a href="#themes" class="navtop">THEMES</a>
+            </li>
+            <li>
+              <a href="#about" class="navtop">ABOUT</a>
+            </li>
+            <li class="active">
+              <a href="#about" class="navtop">HOME</a>
+            </li>
+        </ul>
+    </div>
       </header>
       <!----- welcome text ------>
       <section id="welcome">
@@ -188,6 +180,8 @@
             </div>
         </div>
       </section>
+      <!-------------calendar -------->
+      <iframe src="https://calendar.google.com/calendar/embed?src=soufianedahimi01%40gmail.com&ctz=Africa%2FCasablanca" style="border: 0" width="400" height="400" frameborder="0" scrolling="no"></iframe>
       <!------------footer ---------->
       <section id = "footer">
         <div class="container">
@@ -206,7 +200,7 @@
               <h1>Quick Contact</h1>
               <p><i class="fa fa-phone-square"></i>+212 682092732</p>
               <p><i class="fa fa-envelope"></i>contact#website.com</p>
-              <p><i class="city"></i>Ben Guerir  , Morocco</p>
+              <p><i class="fa city"></i>Ben Guerir  , Morocco</p>
             </div>
             <div class="col-md-3">
               <h1>Follow Us On</h1>
@@ -229,5 +223,30 @@
               <script type="text/javascript">
               new WOW().init();
               </script>
+              <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+
+          <script  >
+          // ---------horizontal-navbar-menu-----------
+              var tabsNewAnim = $('#navbar-animmenu');
+              var selectorNewAnim = $('#navbar-animmenu').find('li').length;
+              //var selectorNewAnim = $(".tabs").find(".selector");
+              var activeItemNewAnim = tabsNewAnim.find('.active');
+              var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
+              var itemPosNewAnimLeft = activeItemNewAnim.position();
+              $(".hori-selector").css({
+                "left":itemPosNewAnimLeft.left + "px",
+                "width": activeWidthNewAnimWidth + "px"
+              });
+              $("#navbar-animmenu").on("click","li",function(e){
+                $('#navbar-animmenu ul li').removeClass("active");
+                $(this).addClass('active');
+                var activeWidthNewAnimWidth = $(this).innerWidth();
+                var itemPosNewAnimLeft = $(this).position();
+                $(".hori-selector").css({
+                  "left":itemPosNewAnimLeft.left + "px",
+                  "width": activeWidthNewAnimWidth + "px"
+                });
+              });
+          </script>
   </body>
 </html>

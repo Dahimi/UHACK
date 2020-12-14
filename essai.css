@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,900');
+
+/*------------------------------------------------------------------
+    IMPORT FILES
+-------------------------------------------------------------------*/
+
+@import url(css/animate.css);
+@import url(css/flaticon.css);
+@import url(css/icomoon.css);
+@import url(css/prettyPhoto.css);
+@import url(css/owl.carousel.css);
+@import url(css/font-awesome.min.css);
+
+body {
+    color: #999;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.80857;
+}
+body.demos .service-widget h3 {
+    border-bottom: 1px solid #ededed;
+    font-size: 18px;
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+body.demos .service-widget {
+    margin: 0 0 30px;
+    padding: 30px;
+    background-color: #fff
+}
+
+.section {
+    display: block;
+    overflow: hidden;
+    padding: 120px 0;
+}
+
+.section.wb {
+    background-color: #ffffff;
+}
+
+.section.lb {
+    background-color: #f2f3f5;
+}
+
+.section.db {
+    background-color: #1f1f1f;
+}
+
+.section.color1 {
+    background-color: #448AFF;
+}
+
+.section.colorsection p,
+.section.colorsection h3,
+.section.db h3 {
+    color: #ffffff;
+}
+
+.service-widget{
+	background: #ffffff;
+}
+
+.section.lb .service-dit h3{
+	padding: 12px 0px;
+}
+.service-dit{
+	padding: 20px 15px;
+}
+.service-widget:hover .hoverbutton {
+    opacity: 1;
+}

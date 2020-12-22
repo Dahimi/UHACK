@@ -168,7 +168,7 @@ slider p {
 }
 
 #schedule .schedule-item:hover {
-  background-color: rgb(255,128,0);
+  background-color: rgb(128,64,64);
 }
 
 #schedule .schedule-item time {

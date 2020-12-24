@@ -4,7 +4,7 @@
 	  $('body').addClass('js');
 	  var $menu = $('#menu'),
 	    $menulink = $('.menu-link');
-	  
+
 	$menulink.click(function() {
 	  $menulink.toggleClass('active');
 	  $menu.toggleClass('active');
@@ -55,7 +55,7 @@
 	   // fade:true,
 	    draggable:false,
 	    prevArrow:'<button class="PrevArrow"></button>',
-	    nextArrow:'<button class="NextArrow"></button>', 
+	    nextArrow:'<button class="NextArrow"></button>',
 	});
 
 
@@ -87,7 +87,7 @@
 	      'seconds': seconds
 	    };
 	  }
-	  
+
 	  function initializeClock(endtime){
 	  var timeinterval = setInterval(function(){
 	    var t = getTimeRemaining(endtime);
@@ -100,7 +100,7 @@
 	    }
 	  },1000);
 	}
-	initializeClock(((new Date()).getFullYear()+1) + "/1/1")
+	initializeClock(((new Date()).getFullYear()+1) + "/1/21")
 	})()
 
 })(jQuery);

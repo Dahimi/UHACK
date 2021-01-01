@@ -1909,6 +1909,8 @@ section.contact form button {
 #sponsers .sponser{
   padding: 10px;
   margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 #sponsers .row{
   display: grid;

@@ -100,7 +100,7 @@
 	    }
 	  },1000);
 	}
-	initializeClock(((new Date()).getFullYear()) + "/2/15")
+	initializeClock(((new Date()).getFullYear()) + "/2/27")
 	})()
 
 })(jQuery);

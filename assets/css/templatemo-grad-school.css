@@ -320,7 +320,7 @@ a.menu-link { display: none; }
     min-height: 100vh;
     max-width: 100%;
     max-height: 100vh;
-    object-fit: cover;
+    
     z-index: -1;
 }
 
@@ -1917,16 +1917,11 @@ section.contact form button {
   padding-bottom: 50px;
 }
 #sponsers .sponser{
-  padding: 55px;
+  padding: 70px;
   margin: auto;
-  margin-left: 20px;
-  margin-right: 20px;
 
 }
-#sponsers .row{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
+
 #sponsers h1{
   color : #013f7e;
   font-family: 'Lora', sans-serif;

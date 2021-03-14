@@ -315,12 +315,18 @@ a.menu-link { display: none; }
 #bg-video::-webkit-media-controls {
     display: none !important;
 }
+#awards{
+  background-color: #172238;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
 #award_img {
     min-width: 100%;
     min-height: 100vh;
     max-width: 100%;
     max-height: 100vh;
-    
+
     z-index: -1;
 }
 
